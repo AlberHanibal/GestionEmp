@@ -6,14 +6,12 @@ Alberto Colmenar
 '''
 import random
 prima = [random.randint(1, 49)]
-numDuplicado = True
-x = 0
 while len(prima) < 6:
-    num = random.randint(1, 49)
+    numDuplicado =  True
     while numDuplicado:
+        num = random.randint(1, 49)
         if (prima.count(num) == 1):
             numDuplicado = True
-            num = random.randint(1, 49)
         else:
             numDuplicado = False
     if not numDuplicado:
