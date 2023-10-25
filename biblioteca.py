@@ -2,10 +2,9 @@
 Alberto Colmenar
 2ºA DAM
 18/10/23
-x
+25/10/23
 '''
 #Gestión de biblioteca
-#Comprobar si es número en añadir y modificar
 
 class Libro:
     def __init__(self, titulo, autor, anno):
@@ -31,20 +30,29 @@ def busquedaTitulo(lista, titulo):
     return listaAutor
 
 def borradoTitulo(lista, titulo):
-    nuevaLista = lista.copy()
-    for libro in lista:
-        if (libro.titulo.lower() == titulo.lower()):
-            nuevaLista.remove(libro)
-            print("Borrado: {}".format(libro))
-    return nuevaLista
+    listaCorta = busquedaTitulo(lista, titulo)
+    if (listaCorta.count != 0):
+        print("0. Salir")
+        mostrarLista(listaCorta)
+        print("¿Cuál quieres borrar?")
+        numero = pedirDigito()
+        aBorrar = listaCorta[numero - 1]
+        print("Borrado: {}".format(aBorrar))
+        lista.remove(aBorrar)
+    return lista
 
 def borradoTituloAutor(lista, titulo, autor):
-    nuevaLista = lista.copy()
-    for libro in lista:
-        if (libro.titulo.lower() == titulo.lower() and libro.autor.lower() == autor.lower()):
-            nuevaLista.remove(libro)
-            print("Borrado: {}".format(libro))
-    return nuevaLista
+    listaCorta = busquedaTitulo(lista, titulo)
+    listaCorta = busquedaAutor(listaCorta, autor)
+    if (listaCorta.count != 0):
+        print("0. Salir")
+        mostrarLista(listaCorta)
+        print("¿Cuál quieres borrar?")
+        numero = pedirDigito()
+        aBorrar = listaCorta[numero - 1]
+        print("Borrado: {}".format(aBorrar))
+        lista.remove(aBorrar)
+    return lista
 
 def mostrarLista(lista):
     numero = 1
@@ -72,15 +80,24 @@ def modificarLibro(lista, index):
     print("¿Quieres modificar el año de publicación? (s/n)")
     opcion = input()
     if (opcion == "s"):
-        anno = int(input())
+        anno = pedirDigito()
         libroAModificar.anno = anno
     lista.insert(index - 1, libroAModificar)
     print("Modificado correctamente: {}".format(lista[index - 1]))
     return lista
 
+def pedirDigito():
+    comprobarDigito = False;
+    while (not comprobarDigito):
+        num = input()
+        comprobarDigito = num.isdigit()
+        if (not comprobarDigito):
+            print("Tienes que introducir un número")
+    return int(num)
+
 opcion = 0
-listaLibros = [Libro("Mesa", "Alberto", "2023"), Libro("Mesa", "Roberto", "1237")]
-#listaLibros = []
+#listaLibros = [Libro("Mesa", "Alberto", "2023"), Libro("Mesa", "Roberto", "1237")]
+listaLibros = []
 while (not opcion == 5):
     print('''
 *********************************************************
@@ -94,7 +111,7 @@ while (not opcion == 5):
 *							*
 *********************************************************
 ''')
-    opcion = int(input())
+    opcion = pedirDigito()
     match opcion:
         case 1:
             print("Dame un título.")
@@ -102,15 +119,13 @@ while (not opcion == 5):
             print("Dame su autor.")
             autor = input()
             print("Dame su año de publicación.")
-            anno = input()
-            print(anno.isdigit())
-            # comprobar caso.isdigit()
+            anno = pedirDigito()
             listaLibros.append(Libro(titulo, autor, anno))
         case 2:
             if (hayLibros(listaLibros)):
                 print("1. Búsqueda por autor.")
                 print("2. Búsqueda por título.")
-                tipoBusqueda = int(input())
+                tipoBusqueda = pedirDigito()
                 if (tipoBusqueda == 1):
                     print("Dame un autor.")
                     autor = input()
@@ -125,7 +140,7 @@ while (not opcion == 5):
             if (hayLibros(listaLibros)):
                 print("1. Borrado por título.")
                 print("2. Borrado por título y autor.")
-                tipoBorrado = int(input())
+                tipoBorrado = pedirDigito()
                 if (tipoBorrado == 1):
                     print("Dame un título.")
                     titulo = input()
@@ -142,28 +157,31 @@ while (not opcion == 5):
             if (hayLibros(listaLibros)):
                 print("1. Buscar por título.")
                 print("2. Mostrar todos los libros.")
-                opcion = int(input())
+                opcion = pedirDigito()
                 if (opcion == 1):
                     print("Dame un título.")
                     titulo = input()
                     listaTitulo = busquedaTitulo(listaLibros, titulo)
                     if (hayLibros(listaTitulo)):
                         print("¿Cuál quieres modificar?")
+                        print("0. Salir")
                         mostrarLista(listaTitulo)
-                        numero = int(input())
+                        numero = pedirDigito()
                         if (len(listaTitulo) >= numero):
-                            libroBuscado = listaTitulo[numero - 1]
-                            posLibro = listaLibros.index(libroBuscado)
-                            listaLibros = modificarLibro(listaLibros, posLibro + 1)
+                            if (numero != 0):
+                                libroBuscado = listaTitulo[numero - 1]
+                                posLibro = listaLibros.index(libroBuscado)
+                                listaLibros = modificarLibro(listaLibros, posLibro + 1)
                     else:
                         print("No hay libros con ese título.")
                 elif (opcion == 2):
                     print("¿Cuál quieres modificar?")
+                    print("0. Salir")
                     mostrarLista(listaLibros)
-                    numero = int(input())
+                    numero = pedirDigito()
                     if (len(listaLibros) >= numero):
-                        listaLibros = modificarLibro(listaLibros, numero)
-                    
+                        if (numero != 0):
+                            listaLibros = modificarLibro(listaLibros, numero)
             else:
                 print("No hay libros en la biblioteca.")
         case 5:
