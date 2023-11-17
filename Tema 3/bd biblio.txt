@@ -1,0 +1,54 @@
+libros
+--------------
+ID (int)
+Titulo (VC)
+ISBN (VC)
+Año (int)
+ID_Autor (int)
+Editorial (VC)
+Genero (VC)
+Idioma (VC)
+F.Alta (date)
+F.Baja (date)
+Eliminado (bit)
+Stock (int)
+Disponible (bit)
+
+
+autores
+--------------
+ID (int) 
+Nombre, Apellido (VC)
+F.Nacimiento (int)
+Pais (VC)
+F.Alta (date)
+F.Baja (date)
+Eliminado (bit)
+
+
+clientes
+--------------
+ID (int)
+Contraseña (VC)
+DNI (VC)
+Nombre, Apellido (VC)
+Telefono (VC)
+Email (VC)
+Domicilio (VC)
+Prestamos (int) cuanto libros tiene prestados
+F.Alta (date)
+F.Baja (date)
+Eliminado (bit)
+
+
+prestamo
+--------------
+ID (int)
+ID_Libro (int)
+ID_Cliente (int)
+F.Prestamo (date)
+F.Devolucion (date)
+F.Limite (date)
+Devuelto (bit)
+
+
