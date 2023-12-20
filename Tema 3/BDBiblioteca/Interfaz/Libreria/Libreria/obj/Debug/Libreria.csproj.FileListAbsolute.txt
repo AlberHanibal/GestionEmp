@@ -1,0 +1,14 @@
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\bin\Debug\Libreria.exe.config
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\bin\Debug\Libreria.exe
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\bin\Debug\Libreria.pdb
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.csproj.AssemblyReference.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.csproj.SuggestedBindingRedirects.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.Form1.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.Properties.Resources.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.csproj.GenerateResource.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.csproj.CoreCompileInputs.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.exe
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.pdb
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.Portada.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.UserControl1.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.UserControl2.resources
