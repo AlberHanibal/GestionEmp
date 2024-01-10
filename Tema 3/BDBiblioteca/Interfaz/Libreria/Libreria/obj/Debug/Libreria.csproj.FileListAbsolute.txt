@@ -10,5 +10,5 @@ C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\I
 C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.exe
 C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.pdb
 C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.Portada.resources
-C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.UserControl1.resources
-C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.UserControl2.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.Autor.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Tema 3\BDBiblioteca\Interfaz\Libreria\Libreria\obj\Debug\Libreria.Libro.resources

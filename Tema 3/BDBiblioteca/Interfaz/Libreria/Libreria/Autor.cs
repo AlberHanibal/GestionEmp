@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Libreria
 {
-    public partial class Autor : Form
+    public partial class Autor : UserControl
     {
         public Autor()
         {
             InitializeComponent();
         }
+
     }
 }

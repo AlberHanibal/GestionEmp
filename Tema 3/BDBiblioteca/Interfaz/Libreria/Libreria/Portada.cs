@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Libreria
 {
     public partial class Portada : Form
     {
+        //Properties.Settings.Default.SERVER
         public Portada()
         {
             InitializeComponent();
@@ -25,14 +27,14 @@ namespace Libreria
         private void libroToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new UserControl1());
+            panel1.Controls.Add(new Libro());
             //new Form1().Show();
         }
 
         private void autorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            panel1.Controls.Add(new UserControl2());
+            panel1.Controls.Add(new Autor());
         }
     }
 }
