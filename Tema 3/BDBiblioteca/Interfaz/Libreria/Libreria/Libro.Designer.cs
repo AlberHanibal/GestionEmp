@@ -46,10 +46,10 @@
             this.cajaAutor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cajaTitulo = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listaLibros = new System.Windows.Forms.ListView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.cajaBusquedaTitulo = new System.Windows.Forms.TextBox();
             this.BorrarLibro = new System.Windows.Forms.Button();
             this.ModificarLibro = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -220,19 +220,20 @@
             this.cajaTitulo.Size = new System.Drawing.Size(107, 20);
             this.cajaTitulo.TabIndex = 0;
             // 
-            // listView1
+            // listaLibros
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(30, 306);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(816, 106);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listaLibros.HideSelection = false;
+            this.listaLibros.Location = new System.Drawing.Point(30, 306);
+            this.listaLibros.Name = "listaLibros";
+            this.listaLibros.Size = new System.Drawing.Size(816, 106);
+            this.listaLibros.TabIndex = 1;
+            this.listaLibros.UseCompatibleStateImageBehavior = false;
+            this.listaLibros.View = System.Windows.Forms.View.List;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.cajaBusquedaTitulo);
             this.groupBox2.Controls.Add(this.BorrarLibro);
             this.groupBox2.Controls.Add(this.ModificarLibro);
             this.groupBox2.Location = new System.Drawing.Point(30, 217);
@@ -250,12 +251,13 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Buscar por Título";
             // 
-            // textBox9
+            // cajaBusquedaTitulo
             // 
-            this.textBox9.Location = new System.Drawing.Point(35, 56);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 2;
+            this.cajaBusquedaTitulo.Location = new System.Drawing.Point(35, 56);
+            this.cajaBusquedaTitulo.Name = "cajaBusquedaTitulo";
+            this.cajaBusquedaTitulo.Size = new System.Drawing.Size(100, 20);
+            this.cajaBusquedaTitulo.TabIndex = 2;
+            this.cajaBusquedaTitulo.TextChanged += new System.EventHandler(this.busquedaTitulo);
             // 
             // BorrarLibro
             // 
@@ -280,7 +282,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listaLibros);
             this.Controls.Add(this.groupBox1);
             this.Name = "Libro";
             this.Size = new System.Drawing.Size(885, 456);
@@ -313,10 +315,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox cajaISBN;
         private System.Windows.Forms.Button AñadirLibro;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listaLibros;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox cajaBusquedaTitulo;
         private System.Windows.Forms.Button BorrarLibro;
         private System.Windows.Forms.Button ModificarLibro;
     }
