@@ -1,0 +1,37 @@
+TABLA CACTUS
+_____________________
+PK especie (nombre científico)
+género
+tribu
+distribucion (origen) null
+stock
+nombre común null
+
+todo minus menos la primera, controlarlo
+------------------------
+
+INTERFAZ
+portada
+	pulsa cualquier botón (con animación de parpadeo)
+	
+de primeras entrar con el excel leído
+	sino existe crearlo
+botón añadir cactus
+	ventana emergente con los campos
+		autocompletado con genero y tribu con las que haya en la tabla
+formato tabla con botón modificar y borrar
+botón venta o -1 (?)
+
+búsqueda por especie, genero, tribu, distribución
+
+------------------------
+
+una clase que lea, inserte, modifique
+
+al mostrar partes de la tabla guardarse el índice para acceso rápido
+
+clase cactus con datos e indice, no se
+
+
+
+
