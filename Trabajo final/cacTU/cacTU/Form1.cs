@@ -15,6 +15,14 @@ namespace cacTU
         public Form1()
         {
             InitializeComponent();
+            string rutaArchivo = AppDomain.CurrentDomain.BaseDirectory + "cactus.xlsx";
+
+            SQLDocument archivo = new SQLDocument();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

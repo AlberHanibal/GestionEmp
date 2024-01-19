@@ -52,8 +52,19 @@
             this.cajaBusquedaTitulo = new System.Windows.Forms.TextBox();
             this.BorrarLibro = new System.Windows.Forms.Button();
             this.ModificarLibro = new System.Windows.Forms.Button();
+            this.tablaLibros = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AñoPublicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Editorial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaLibros)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -223,9 +234,9 @@
             // listaLibros
             // 
             this.listaLibros.HideSelection = false;
-            this.listaLibros.Location = new System.Drawing.Point(30, 306);
+            this.listaLibros.Location = new System.Drawing.Point(30, 270);
             this.listaLibros.Name = "listaLibros";
-            this.listaLibros.Size = new System.Drawing.Size(816, 106);
+            this.listaLibros.Size = new System.Drawing.Size(816, 36);
             this.listaLibros.TabIndex = 1;
             this.listaLibros.UseCompatibleStateImageBehavior = false;
             this.listaLibros.View = System.Windows.Forms.View.List;
@@ -236,7 +247,7 @@
             this.groupBox2.Controls.Add(this.cajaBusquedaTitulo);
             this.groupBox2.Controls.Add(this.BorrarLibro);
             this.groupBox2.Controls.Add(this.ModificarLibro);
-            this.groupBox2.Location = new System.Drawing.Point(30, 217);
+            this.groupBox2.Location = new System.Drawing.Point(30, 181);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(816, 83);
             this.groupBox2.TabIndex = 2;
@@ -276,11 +287,92 @@
             this.ModificarLibro.TabIndex = 0;
             this.ModificarLibro.Text = "Modificar";
             this.ModificarLibro.UseVisualStyleBackColor = true;
+            this.ModificarLibro.Click += new System.EventHandler(this.ModificarLibro_Click);
+            // 
+            // tablaLibros
+            // 
+            this.tablaLibros.AllowUserToAddRows = false;
+            this.tablaLibros.AllowUserToDeleteRows = false;
+            this.tablaLibros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaLibros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Titulo,
+            this.ISBN,
+            this.AñoPublicacion,
+            this.Autor,
+            this.Editorial,
+            this.Genero,
+            this.Stock,
+            this.Idioma});
+            this.tablaLibros.Location = new System.Drawing.Point(30, 312);
+            this.tablaLibros.Name = "tablaLibros";
+            this.tablaLibros.ReadOnly = true;
+            this.tablaLibros.Size = new System.Drawing.Size(816, 118);
+            this.tablaLibros.TabIndex = 3;
+            this.tablaLibros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaLibros_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Visible = false;
+            // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Titulo";
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            // 
+            // ISBN
+            // 
+            this.ISBN.HeaderText = "ISBN";
+            this.ISBN.Name = "ISBN";
+            this.ISBN.ReadOnly = true;
+            // 
+            // AñoPublicacion
+            // 
+            this.AñoPublicacion.HeaderText = "Año Publicación";
+            this.AñoPublicacion.Name = "AñoPublicacion";
+            this.AñoPublicacion.ReadOnly = true;
+            this.AñoPublicacion.Width = 70;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.Name = "Autor";
+            this.Autor.ReadOnly = true;
+            // 
+            // Editorial
+            // 
+            this.Editorial.HeaderText = "Editorial";
+            this.Editorial.Name = "Editorial";
+            this.Editorial.ReadOnly = true;
+            // 
+            // Genero
+            // 
+            this.Genero.HeaderText = "Género";
+            this.Genero.Name = "Genero";
+            this.Genero.ReadOnly = true;
+            // 
+            // Stock
+            // 
+            this.Stock.HeaderText = "Stock";
+            this.Stock.Name = "Stock";
+            this.Stock.ReadOnly = true;
+            this.Stock.Width = 80;
+            // 
+            // Idioma
+            // 
+            this.Idioma.HeaderText = "Idioma";
+            this.Idioma.Name = "Idioma";
+            this.Idioma.ReadOnly = true;
             // 
             // Libro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tablaLibros);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.listaLibros);
             this.Controls.Add(this.groupBox1);
@@ -291,6 +383,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaLibros)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,5 +414,15 @@
         private System.Windows.Forms.TextBox cajaBusquedaTitulo;
         private System.Windows.Forms.Button BorrarLibro;
         private System.Windows.Forms.Button ModificarLibro;
+        private System.Windows.Forms.DataGridView tablaLibros;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AñoPublicacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Editorial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Genero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Idioma;
     }
 }

@@ -96,12 +96,27 @@ namespace Libreria
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                String linea = (String) dr.GetValue(dr.GetOrdinal("Titulo")) + " " + (String) dr.GetValue(dr.GetOrdinal("ISBN"));
-                listaLibros.Items.Add(linea);
+                
+                tablaLibros.Rows.Add(dr.GetValue(dr.GetOrdinal("ID")), dr.GetValue(dr.GetOrdinal("Titulo")), dr.GetValue(dr.GetOrdinal("ISBN")), 
+                    dr.GetValue(dr.GetOrdinal("Año Publicacion")), "Autor", dr.GetValue(dr.GetOrdinal("Editorial")), 
+                    dr.GetValue(dr.GetOrdinal("Genero")), dr.GetValue(dr.GetOrdinal("Stock")), dr.GetValue(dr.GetOrdinal("Idioma")));
+                //String linea = (String) dr.GetValue(dr.GetOrdinal("Titulo")) + " " + (String) dr.GetValue(dr.GetOrdinal("ISBN"));
+                //listaLibros.Items.Add(linea);
                 // habría que coger el nombre del autor con el id
             }
             dr.Close();
             cmd.Dispose();
+        }
+
+        private void tablaLibros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ModificarLibro_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow linea = tablaLibros.SelectedRows[0];
+            Console.WriteLine(linea.Cells[2].Value);
         }
     }
 }
