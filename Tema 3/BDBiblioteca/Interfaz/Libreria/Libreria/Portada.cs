@@ -36,5 +36,10 @@ namespace Libreria
             panel1.Controls.Clear();
             panel1.Controls.Add(new Autor());
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

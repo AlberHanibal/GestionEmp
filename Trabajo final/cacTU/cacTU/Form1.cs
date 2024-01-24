@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpreadsheetLight;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,7 @@ namespace cacTU
         {
             InitializeComponent();
             string rutaArchivo = AppDomain.CurrentDomain.BaseDirectory + "cactus.xlsx";
-
-            SQLDocument archivo = new SQLDocument();
+            SLDocument archivo = new SLDocument();
         }
 
         private void Form1_Load(object sender, EventArgs e)

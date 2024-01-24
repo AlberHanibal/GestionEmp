@@ -16,11 +16,11 @@ portada
 	
 de primeras entrar con el excel leído
 	sino existe crearlo
-botón añadir cactus
-	ventana emergente con los campos
+X botón añadir cactus
+	X ventana emergente con los campos
 		autocompletado con genero y tribu con las que haya en la tabla
-formato tabla con botón modificar y borrar
-botón venta o -1 (?)
+X formato tabla con botón modificar y borrar
+X botón venta o -1 (?)
 
 búsqueda por especie, genero, tribu, distribución
 

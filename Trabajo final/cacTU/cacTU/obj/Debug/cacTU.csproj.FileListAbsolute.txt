@@ -1,0 +1,15 @@
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\cacTU.exe.config
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\cacTU.exe
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\cacTU.pdb
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.csproj.AssemblyReference.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.csproj.SuggestedBindingRedirects.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.Form1.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.Inventario.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.Portada.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.Properties.Resources.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.csproj.GenerateResource.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.csproj.CoreCompileInputs.cache
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.exe
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.pdb
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.Tabla.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.FormularioCactus.resources
