@@ -13,3 +13,11 @@ C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\c
 C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.pdb
 C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.Tabla.resources
 C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.FormularioCactus.resources
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\SpreadsheetLight.dll
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\SpreadsheetLight.xml
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\obj\Debug\cacTU.csproj.CopyComplete
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\System.Drawing.Common.dll
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\System.IO.Packaging.dll
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\DAM2A-03\Documents\GestionEmp\ProyectosGestionEmp\Trabajo final\cacTU\cacTU\bin\Debug\System.IO.Packaging.xml

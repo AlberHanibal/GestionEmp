@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpreadsheetLight;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace cacTU
         {
             InitializeComponent();
             contenido.Controls.Add(new Tabla());
+            
         }
 
         private void AñadirCactus_Click(object sender, EventArgs e)

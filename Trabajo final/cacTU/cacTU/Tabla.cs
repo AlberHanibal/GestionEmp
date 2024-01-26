@@ -12,9 +12,11 @@ namespace cacTU
 {
     public partial class Tabla : UserControl
     {
+        private BD datos;
         public Tabla()
         {
             InitializeComponent();
+            datos = new BD();
             // leer excel (sino existe crearlo) y mostrar el inventario
             tablaCactus.Rows.Add(0, "asdsad", "qweqwe", "yutyut", "españa", "con pinchos", 10, "Modificar", "Venta");
             tablaCactus.Rows.Add(1, "aasdsdsad", "qweqweqwe", "yutytrut", "españa2", "con pinchos2", 10, "Modificar", "Venta");
