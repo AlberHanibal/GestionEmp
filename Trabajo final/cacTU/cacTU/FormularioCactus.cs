@@ -14,12 +14,15 @@ namespace cacTU
     {
 
         private DataGridViewRow linea = null;
+        private BD datos;
 
         public FormularioCactus(DataGridViewRow linea = null)
             
         {
             
             InitializeComponent();
+            Inventario.cambiarMenuTop();
+            datos = new BD();
             if (linea != null)
             {
                 this.linea = linea;
@@ -39,21 +42,48 @@ namespace cacTU
 
         private void botonGuardar_Click(object sender, EventArgs e)
         {
-            if (linea == null)
+            if (camposObligatorios())
             {
-                // añadir cactus
+                if (linea == null)
+                {
+                    Cactus cactus = new Cactus(cajaEspecie.Text, cajaGenero.Text, cajaTribu.Text, 
+                        (int)cajaStock.Value, 0, cajaNombreComun.Text, cajaDistribucion.Text);
+                    datos.añadirCactus(cactus);
+                }
+                else
+                {
+                    // modificar cactus, coger el indice
+                    Cactus cactus = new Cactus(cajaEspecie.Text, cajaGenero.Text, cajaTribu.Text,
+                        (int)cajaStock.Value, (int) linea.Cells["Indice"].Value, cajaNombreComun.Text, cajaDistribucion.Text);
+                    datos.modificarCactus(cactus);
+                }
+
+                this.Controls.Clear();
+                this.Controls.Add(new Tabla());
+                Inventario.cambiarMenuTop();
             } else
             {
-                // modificar cactus, coger el indice
+                // mostrar error
             }
 
-            // si sale bien a Tabla()
         }
 
         private void botonCancelar_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
             this.Controls.Add(new Tabla());
+            Inventario.cambiarMenuTop();
+        }
+
+        private Boolean camposObligatorios()
+        {
+            if (cajaEspecie.Text == "" || cajaGenero.Text == "" || cajaTribu.Text == "")
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
         }
     }
 }

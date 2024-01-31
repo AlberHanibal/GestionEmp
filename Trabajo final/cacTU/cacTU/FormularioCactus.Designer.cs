@@ -34,15 +34,15 @@
             this.cajaDistribucion = new System.Windows.Forms.TextBox();
             this.cajaNombreComun = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textoEspecie = new System.Windows.Forms.Label();
-            this.textoGenero = new System.Windows.Forms.Label();
-            this.TextoTribu = new System.Windows.Forms.Label();
-            this.textoNombreComun = new System.Windows.Forms.Label();
-            this.textoDistribucion = new System.Windows.Forms.Label();
-            this.textoStock = new System.Windows.Forms.Label();
-            this.cajaStock = new System.Windows.Forms.NumericUpDown();
-            this.botonGuardar = new System.Windows.Forms.Button();
             this.botonCancelar = new System.Windows.Forms.Button();
+            this.botonGuardar = new System.Windows.Forms.Button();
+            this.cajaStock = new System.Windows.Forms.NumericUpDown();
+            this.textoStock = new System.Windows.Forms.Label();
+            this.textoDistribucion = new System.Windows.Forms.Label();
+            this.textoNombreComun = new System.Windows.Forms.Label();
+            this.TextoTribu = new System.Windows.Forms.Label();
+            this.textoGenero = new System.Windows.Forms.Label();
+            this.textoEspecie = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cajaStock)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             // cajaTribu
             // 
-            this.cajaTribu.Location = new System.Drawing.Point(638, 52);
+            this.cajaTribu.Location = new System.Drawing.Point(638, 55);
             this.cajaTribu.Name = "cajaTribu";
             this.cajaTribu.Size = new System.Drawing.Size(100, 22);
             this.cajaTribu.TabIndex = 2;
@@ -105,66 +105,15 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
-            // textoEspecie
+            // botonCancelar
             // 
-            this.textoEspecie.AutoSize = true;
-            this.textoEspecie.Location = new System.Drawing.Point(78, 55);
-            this.textoEspecie.Name = "textoEspecie";
-            this.textoEspecie.Size = new System.Drawing.Size(57, 16);
-            this.textoEspecie.TabIndex = 6;
-            this.textoEspecie.Text = "Especie";
-            // 
-            // textoGenero
-            // 
-            this.textoGenero.AutoSize = true;
-            this.textoGenero.Location = new System.Drawing.Point(327, 55);
-            this.textoGenero.Name = "textoGenero";
-            this.textoGenero.Size = new System.Drawing.Size(52, 16);
-            this.textoGenero.TabIndex = 7;
-            this.textoGenero.Text = "Género";
-            // 
-            // TextoTribu
-            // 
-            this.TextoTribu.AutoSize = true;
-            this.TextoTribu.Location = new System.Drawing.Point(574, 55);
-            this.TextoTribu.Name = "TextoTribu";
-            this.TextoTribu.Size = new System.Drawing.Size(38, 16);
-            this.TextoTribu.TabIndex = 8;
-            this.TextoTribu.Text = "Tribu";
-            // 
-            // textoNombreComun
-            // 
-            this.textoNombreComun.AutoSize = true;
-            this.textoNombreComun.Location = new System.Drawing.Point(34, 180);
-            this.textoNombreComun.Name = "textoNombreComun";
-            this.textoNombreComun.Size = new System.Drawing.Size(101, 16);
-            this.textoNombreComun.TabIndex = 9;
-            this.textoNombreComun.Text = "Nombre Común";
-            // 
-            // textoDistribucion
-            // 
-            this.textoDistribucion.AutoSize = true;
-            this.textoDistribucion.Location = new System.Drawing.Point(302, 180);
-            this.textoDistribucion.Name = "textoDistribucion";
-            this.textoDistribucion.Size = new System.Drawing.Size(77, 16);
-            this.textoDistribucion.TabIndex = 10;
-            this.textoDistribucion.Text = "Distribución";
-            // 
-            // textoStock
-            // 
-            this.textoStock.AutoSize = true;
-            this.textoStock.Location = new System.Drawing.Point(570, 182);
-            this.textoStock.Name = "textoStock";
-            this.textoStock.Size = new System.Drawing.Size(41, 16);
-            this.textoStock.TabIndex = 11;
-            this.textoStock.Text = "Stock";
-            // 
-            // cajaStock
-            // 
-            this.cajaStock.Location = new System.Drawing.Point(638, 176);
-            this.cajaStock.Name = "cajaStock";
-            this.cajaStock.Size = new System.Drawing.Size(100, 22);
-            this.cajaStock.TabIndex = 12;
+            this.botonCancelar.Location = new System.Drawing.Point(638, 239);
+            this.botonCancelar.Name = "botonCancelar";
+            this.botonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.botonCancelar.TabIndex = 14;
+            this.botonCancelar.Text = "Cancelar";
+            this.botonCancelar.UseVisualStyleBackColor = true;
+            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
             // botonGuardar
             // 
@@ -176,15 +125,66 @@
             this.botonGuardar.UseVisualStyleBackColor = true;
             this.botonGuardar.Click += new System.EventHandler(this.botonGuardar_Click);
             // 
-            // botonCancelar
+            // cajaStock
             // 
-            this.botonCancelar.Location = new System.Drawing.Point(638, 239);
-            this.botonCancelar.Name = "botonCancelar";
-            this.botonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.botonCancelar.TabIndex = 14;
-            this.botonCancelar.Text = "Cancelar";
-            this.botonCancelar.UseVisualStyleBackColor = true;
-            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
+            this.cajaStock.Location = new System.Drawing.Point(638, 180);
+            this.cajaStock.Name = "cajaStock";
+            this.cajaStock.Size = new System.Drawing.Size(100, 22);
+            this.cajaStock.TabIndex = 12;
+            // 
+            // textoStock
+            // 
+            this.textoStock.AutoSize = true;
+            this.textoStock.Location = new System.Drawing.Point(570, 182);
+            this.textoStock.Name = "textoStock";
+            this.textoStock.Size = new System.Drawing.Size(41, 16);
+            this.textoStock.TabIndex = 11;
+            this.textoStock.Text = "Stock";
+            // 
+            // textoDistribucion
+            // 
+            this.textoDistribucion.AutoSize = true;
+            this.textoDistribucion.Location = new System.Drawing.Point(302, 180);
+            this.textoDistribucion.Name = "textoDistribucion";
+            this.textoDistribucion.Size = new System.Drawing.Size(77, 16);
+            this.textoDistribucion.TabIndex = 10;
+            this.textoDistribucion.Text = "Distribución";
+            // 
+            // textoNombreComun
+            // 
+            this.textoNombreComun.AutoSize = true;
+            this.textoNombreComun.Location = new System.Drawing.Point(34, 180);
+            this.textoNombreComun.Name = "textoNombreComun";
+            this.textoNombreComun.Size = new System.Drawing.Size(101, 16);
+            this.textoNombreComun.TabIndex = 9;
+            this.textoNombreComun.Text = "Nombre Común";
+            // 
+            // TextoTribu
+            // 
+            this.TextoTribu.AutoSize = true;
+            this.TextoTribu.Location = new System.Drawing.Point(574, 55);
+            this.TextoTribu.Name = "TextoTribu";
+            this.TextoTribu.Size = new System.Drawing.Size(38, 16);
+            this.TextoTribu.TabIndex = 8;
+            this.TextoTribu.Text = "Tribu";
+            // 
+            // textoGenero
+            // 
+            this.textoGenero.AutoSize = true;
+            this.textoGenero.Location = new System.Drawing.Point(327, 55);
+            this.textoGenero.Name = "textoGenero";
+            this.textoGenero.Size = new System.Drawing.Size(52, 16);
+            this.textoGenero.TabIndex = 7;
+            this.textoGenero.Text = "Género";
+            // 
+            // textoEspecie
+            // 
+            this.textoEspecie.AutoSize = true;
+            this.textoEspecie.Location = new System.Drawing.Point(78, 55);
+            this.textoEspecie.Name = "textoEspecie";
+            this.textoEspecie.Size = new System.Drawing.Size(57, 16);
+            this.textoEspecie.TabIndex = 6;
+            this.textoEspecie.Text = "Especie";
             // 
             // FormularioCactus
             // 

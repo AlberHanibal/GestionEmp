@@ -17,9 +17,12 @@ namespace cacTU
         {
             InitializeComponent();
             datos = new BD();
-            // leer excel (sino existe crearlo) y mostrar el inventario
-            tablaCactus.Rows.Add(0, "asdsad", "qweqwe", "yutyut", "españa", "con pinchos", 10, "Modificar", "Venta");
-            tablaCactus.Rows.Add(1, "aasdsdsad", "qweqweqwe", "yutytrut", "españa2", "con pinchos2", 10, "Modificar", "Venta");
+            List<Cactus> listaCactus = datos.leerExcel();
+            foreach (Cactus cactus in listaCactus)
+            {
+                tablaCactus.Rows.Add(cactus.getIndice(), cactus.getEspecie(), cactus.getGenero(),
+                    cactus.getTribu(), cactus.getDistribucion(), cactus.getNombreComun(), cactus.getStock(), "Modificar", "Venta");
+            }
         }
 
         private void tablaCactus_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -35,6 +38,7 @@ namespace cacTU
                 if ((int) linea.Cells["Stock"].Value > 0)
                 {
                     linea.Cells["Stock"].Value = (int) linea.Cells["Stock"].Value - 1;
+                    datos.venta((int) linea.Cells["Indice"].Value, (int)linea.Cells["Stock"].Value);
                 }
             }
         }

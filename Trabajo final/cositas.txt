@@ -14,11 +14,12 @@ INTERFAZ
 portada
 	pulsa cualquier botón (con animación de parpadeo)
 	
-de primeras entrar con el excel leído
+X de primeras entrar con el excel leído
 	sino existe crearlo
 X botón añadir cactus
 	X ventana emergente con los campos
 		autocompletado con genero y tribu con las que haya en la tabla
+		con propiedad https://nicolocodev.wordpress.com/2011/05/10/textbox-con-autocompletar/
 X formato tabla con botón modificar y borrar
 X botón venta o -1 (?)
 

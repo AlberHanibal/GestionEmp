@@ -37,11 +37,10 @@
             // 
             // menuTop
             // 
-            this.menuTop.Controls.Add(this.cacTU);
             this.menuTop.Controls.Add(this.AñadirCactus);
             this.menuTop.Location = new System.Drawing.Point(13, 13);
             this.menuTop.Name = "menuTop";
-            this.menuTop.Size = new System.Drawing.Size(939, 87);
+            this.menuTop.Size = new System.Drawing.Size(727, 87);
             this.menuTop.TabIndex = 0;
             // 
             // AñadirCactus
@@ -65,10 +64,10 @@
             // 
             this.cacTU.AutoSize = true;
             this.cacTU.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cacTU.Location = new System.Drawing.Point(750, 15);
+            this.cacTU.Location = new System.Drawing.Point(774, 29);
             this.cacTU.Name = "cacTU";
             this.cacTU.Size = new System.Drawing.Size(163, 55);
-            this.cacTU.TabIndex = 1;
+            this.cacTU.TabIndex = 2;
             this.cacTU.Text = "cacTÚ";
             // 
             // Inventario
@@ -76,13 +75,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 581);
+            this.Controls.Add(this.cacTU);
             this.Controls.Add(this.contenido);
             this.Controls.Add(this.menuTop);
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.menuTop.ResumeLayout(false);
-            this.menuTop.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

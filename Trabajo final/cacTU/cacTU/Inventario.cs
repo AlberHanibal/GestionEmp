@@ -13,10 +13,13 @@ namespace cacTU
 {
     public partial class Inventario : Form
     {
+        private static Panel menu;
+
         public Inventario()
         {
             InitializeComponent();
             contenido.Controls.Add(new Tabla());
+            menu = menuTop;
             
         }
 
@@ -24,6 +27,17 @@ namespace cacTU
         {
             contenido.Controls.Clear();
             contenido.Controls.Add(new FormularioCactus());
+        }
+
+        public static void cambiarMenuTop()
+        {
+            if (menu.Visible == true)
+            {
+                menu.Visible = false;
+            } else
+            {
+                menu.Visible = true;
+            }
         }
     }
 }
