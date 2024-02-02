@@ -44,11 +44,11 @@ namespace cacTU
 
             SLDocument archivo = new SLDocument(rutaArchivo);
             archivo.InsertRow(ultimaFila + 1, 1);
-            archivo.SetCellValue(ultimaFila + 1, 1, cactus.getEspecie());
-            archivo.SetCellValue(ultimaFila + 1, 2, cactus.getGenero());
-            archivo.SetCellValue(ultimaFila + 1, 3, cactus.getTribu());
-            archivo.SetCellValue(ultimaFila + 1, 4, cactus.getNombreComun());
-            archivo.SetCellValue(ultimaFila + 1, 5, cactus.getDistribucion());
+            archivo.SetCellValue(ultimaFila + 1, 1, cactus.getEspecie().ToLower());
+            archivo.SetCellValue(ultimaFila + 1, 2, cactus.getGenero().ToLower());
+            archivo.SetCellValue(ultimaFila + 1, 3, cactus.getTribu().ToLower());
+            archivo.SetCellValue(ultimaFila + 1, 4, cactus.getNombreComun().ToLower());
+            archivo.SetCellValue(ultimaFila + 1, 5, cactus.getDistribucion().ToLower());
             archivo.SetCellValue(ultimaFila + 1, 6, cactus.getStock());
             archivo.SaveAs(rutaArchivo);
         }
@@ -73,11 +73,11 @@ namespace cacTU
         public void modificarCactus(Cactus cactus)
         {
             SLDocument archivo = new SLDocument(rutaArchivo);
-            archivo.SetCellValue(cactus.getIndice(), 1, cactus.getEspecie());
-            archivo.SetCellValue(cactus.getIndice(), 2, cactus.getGenero());
-            archivo.SetCellValue(cactus.getIndice(), 3, cactus.getTribu());
-            archivo.SetCellValue(cactus.getIndice(), 4, cactus.getNombreComun());
-            archivo.SetCellValue(cactus.getIndice(), 5, cactus.getDistribucion());
+            archivo.SetCellValue(cactus.getIndice(), 1, cactus.getEspecie().ToLower());
+            archivo.SetCellValue(cactus.getIndice(), 2, cactus.getGenero().ToLower());
+            archivo.SetCellValue(cactus.getIndice(), 3, cactus.getTribu().ToLower());
+            archivo.SetCellValue(cactus.getIndice(), 4, cactus.getNombreComun().ToLower());
+            archivo.SetCellValue(cactus.getIndice(), 5, cactus.getDistribucion().ToLower());
             archivo.SetCellValue(cactus.getIndice(), 6, cactus.getStock());
             archivo.SaveAs(rutaArchivo);
         }

@@ -34,5 +34,5 @@ al mostrar partes de la tabla guardarse el índice para acceso rápido
 clase cactus con datos e indice, no se
 
 
-
+pega un petardazo al borrar y volver a escribir accessviolationexception
 

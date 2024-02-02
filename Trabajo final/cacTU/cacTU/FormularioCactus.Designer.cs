@@ -31,8 +31,8 @@
             this.cajaEspecie = new System.Windows.Forms.TextBox();
             this.cajaGenero = new System.Windows.Forms.TextBox();
             this.cajaTribu = new System.Windows.Forms.TextBox();
-            this.cajaDistribucion = new System.Windows.Forms.TextBox();
             this.cajaNombreComun = new System.Windows.Forms.TextBox();
+            this.cajaDistribucion = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.botonCancelar = new System.Windows.Forms.Button();
             this.botonGuardar = new System.Windows.Forms.Button();
@@ -60,27 +60,30 @@
             this.cajaGenero.Name = "cajaGenero";
             this.cajaGenero.Size = new System.Drawing.Size(100, 22);
             this.cajaGenero.TabIndex = 1;
+            this.cajaGenero.TextChanged += new System.EventHandler(this.campoEscrito);
             // 
             // cajaTribu
             // 
-            this.cajaTribu.Location = new System.Drawing.Point(638, 55);
+            this.cajaTribu.Location = new System.Drawing.Point(638, 52);
             this.cajaTribu.Name = "cajaTribu";
             this.cajaTribu.Size = new System.Drawing.Size(100, 22);
             this.cajaTribu.TabIndex = 2;
-            // 
-            // cajaDistribucion
-            // 
-            this.cajaDistribucion.Location = new System.Drawing.Point(401, 177);
-            this.cajaDistribucion.Name = "cajaDistribucion";
-            this.cajaDistribucion.Size = new System.Drawing.Size(100, 22);
-            this.cajaDistribucion.TabIndex = 3;
+            this.cajaTribu.TextChanged += new System.EventHandler(this.campoEscrito);
             // 
             // cajaNombreComun
             // 
             this.cajaNombreComun.Location = new System.Drawing.Point(151, 176);
             this.cajaNombreComun.Name = "cajaNombreComun";
             this.cajaNombreComun.Size = new System.Drawing.Size(100, 22);
-            this.cajaNombreComun.TabIndex = 4;
+            this.cajaNombreComun.TabIndex = 3;
+            // 
+            // cajaDistribucion
+            // 
+            this.cajaDistribucion.Location = new System.Drawing.Point(401, 176);
+            this.cajaDistribucion.Name = "cajaDistribucion";
+            this.cajaDistribucion.Size = new System.Drawing.Size(100, 22);
+            this.cajaDistribucion.TabIndex = 4;
+            this.cajaDistribucion.TextChanged += new System.EventHandler(this.campoEscrito);
             // 
             // groupBox1
             // 
@@ -95,8 +98,8 @@
             this.groupBox1.Controls.Add(this.textoEspecie);
             this.groupBox1.Controls.Add(this.cajaEspecie);
             this.groupBox1.Controls.Add(this.cajaGenero);
-            this.groupBox1.Controls.Add(this.cajaDistribucion);
             this.groupBox1.Controls.Add(this.cajaNombreComun);
+            this.groupBox1.Controls.Add(this.cajaDistribucion);
             this.groupBox1.Controls.Add(this.cajaTribu);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(50, 62);
@@ -127,7 +130,7 @@
             // 
             // cajaStock
             // 
-            this.cajaStock.Location = new System.Drawing.Point(638, 180);
+            this.cajaStock.Location = new System.Drawing.Point(638, 176);
             this.cajaStock.Name = "cajaStock";
             this.cajaStock.Size = new System.Drawing.Size(100, 22);
             this.cajaStock.TabIndex = 12;
@@ -135,7 +138,7 @@
             // textoStock
             // 
             this.textoStock.AutoSize = true;
-            this.textoStock.Location = new System.Drawing.Point(570, 182);
+            this.textoStock.Location = new System.Drawing.Point(574, 180);
             this.textoStock.Name = "textoStock";
             this.textoStock.Size = new System.Drawing.Size(41, 16);
             this.textoStock.TabIndex = 11;
@@ -193,7 +196,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormularioCactus";
             this.Size = new System.Drawing.Size(939, 462);
-            this.Load += new System.EventHandler(this.FormularioCactus_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cajaStock)).EndInit();
@@ -206,8 +208,8 @@
         private System.Windows.Forms.TextBox cajaEspecie;
         private System.Windows.Forms.TextBox cajaGenero;
         private System.Windows.Forms.TextBox cajaTribu;
-        private System.Windows.Forms.TextBox cajaDistribucion;
         private System.Windows.Forms.TextBox cajaNombreComun;
+        private System.Windows.Forms.TextBox cajaDistribucion;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button botonGuardar;
         private System.Windows.Forms.NumericUpDown cajaStock;
