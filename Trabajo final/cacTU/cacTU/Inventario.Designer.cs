@@ -63,10 +63,12 @@
             // cacTU
             // 
             this.cacTU.AutoSize = true;
-            this.cacTU.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cacTU.Location = new System.Drawing.Point(774, 29);
+            this.cacTU.BackColor = System.Drawing.Color.Transparent;
+            this.cacTU.Font = new System.Drawing.Font("Segoe Script", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cacTU.ForeColor = System.Drawing.Color.Indigo;
+            this.cacTU.Location = new System.Drawing.Point(764, 13);
             this.cacTU.Name = "cacTU";
-            this.cacTU.Size = new System.Drawing.Size(163, 55);
+            this.cacTU.Size = new System.Drawing.Size(188, 80);
             this.cacTU.TabIndex = 2;
             this.cacTU.Text = "cacTÚ";
             // 
@@ -74,6 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::cacTU.Properties.Resources.backgroundcactus;
             this.ClientSize = new System.Drawing.Size(964, 581);
             this.Controls.Add(this.cacTU);
             this.Controls.Add(this.contenido);

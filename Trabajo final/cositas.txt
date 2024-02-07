@@ -27,12 +27,8 @@ búsqueda por especie, genero, tribu, distribución
 
 ------------------------
 
-una clase que lea, inserte, modifique
+hacer un boton custom con style 
 
-al mostrar partes de la tabla guardarse el índice para acceso rápido
+style en el formulario
 
-clase cactus con datos e indice, no se
-
-
-pega un petardazo al borrar y volver a escribir accessviolationexception
 

@@ -46,6 +46,9 @@
             this.tablaCactus.AllowUserToAddRows = false;
             this.tablaCactus.AllowUserToDeleteRows = false;
             this.tablaCactus.AllowUserToOrderColumns = true;
+            this.tablaCactus.BackgroundColor = System.Drawing.Color.Beige;
+            this.tablaCactus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tablaCactus.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tablaCactus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaCactus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Indice,
@@ -64,6 +67,9 @@
             this.tablaCactus.Size = new System.Drawing.Size(939, 462);
             this.tablaCactus.TabIndex = 1;
             this.tablaCactus.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaCactus_CellClick);
+            this.tablaCactus.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaCactus_CellMouseEnter);
+            this.tablaCactus.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaCactus_CellMouseLeave);
+            this.tablaCactus.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.tablaCactus_PostRow);
             // 
             // Indice
             // 
