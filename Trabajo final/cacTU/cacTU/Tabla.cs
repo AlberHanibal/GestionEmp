@@ -18,6 +18,7 @@ namespace cacTU
         private Color colorPar = Color.FromArgb(147, 227, 104);
         private Color colorParSelec = Color.FromArgb(107, 196, 59);
         private string ultimaFila;
+
         public Tabla()
         {
             InitializeComponent();
@@ -29,6 +30,16 @@ namespace cacTU
                     cactus.getTribu(), cactus.getDistribucion(), cactus.getNombreComun(), cactus.getStock(), "Modificar", "Venta");
             }
         }
+        public Tabla(List<Cactus> listaCactus)
+        {
+            InitializeComponent();
+            foreach (Cactus cactus in listaCactus)
+            {
+                tablaCactus.Rows.Add(cactus.getIndice(), cactus.getEspecie(), cactus.getGenero(),
+                    cactus.getTribu(), cactus.getDistribucion(), cactus.getNombreComun(), cactus.getStock(), "Modificar", "Venta");
+            }
+        }
+
 
         private void tablaCactus_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -54,9 +65,12 @@ namespace cacTU
 
         private void tablaCactus_PostRow(object sender, DataGridViewRowPostPaintEventArgs e)
         {
+            tablaCactus.ColumnHeadersDefaultCellStyle.BackColor = colorImpar;
+            tablaCactus.EnableHeadersVisualStyles = false;
             DataGridViewRowCollection lineas = tablaCactus.Rows;
             foreach (DataGridViewRow row in lineas)
             {
+                
                 if (row.Index % 2 == 0)
                 {
                     row.DefaultCellStyle.BackColor = colorPar;

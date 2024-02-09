@@ -49,14 +49,14 @@
             // 
             // cajaEspecie
             // 
-            this.cajaEspecie.Location = new System.Drawing.Point(151, 52);
+            this.cajaEspecie.Location = new System.Drawing.Point(189, 102);
             this.cajaEspecie.Name = "cajaEspecie";
             this.cajaEspecie.Size = new System.Drawing.Size(100, 22);
             this.cajaEspecie.TabIndex = 0;
             // 
             // cajaGenero
             // 
-            this.cajaGenero.Location = new System.Drawing.Point(401, 52);
+            this.cajaGenero.Location = new System.Drawing.Point(439, 102);
             this.cajaGenero.Name = "cajaGenero";
             this.cajaGenero.Size = new System.Drawing.Size(100, 22);
             this.cajaGenero.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // cajaTribu
             // 
-            this.cajaTribu.Location = new System.Drawing.Point(638, 52);
+            this.cajaTribu.Location = new System.Drawing.Point(676, 102);
             this.cajaTribu.Name = "cajaTribu";
             this.cajaTribu.Size = new System.Drawing.Size(100, 22);
             this.cajaTribu.TabIndex = 2;
@@ -72,14 +72,14 @@
             // 
             // cajaNombreComun
             // 
-            this.cajaNombreComun.Location = new System.Drawing.Point(151, 176);
+            this.cajaNombreComun.Location = new System.Drawing.Point(189, 226);
             this.cajaNombreComun.Name = "cajaNombreComun";
             this.cajaNombreComun.Size = new System.Drawing.Size(100, 22);
             this.cajaNombreComun.TabIndex = 3;
             // 
             // cajaDistribucion
             // 
-            this.cajaDistribucion.Location = new System.Drawing.Point(401, 176);
+            this.cajaDistribucion.Location = new System.Drawing.Point(439, 226);
             this.cajaDistribucion.Name = "cajaDistribucion";
             this.cajaDistribucion.Size = new System.Drawing.Size(100, 22);
             this.cajaDistribucion.TabIndex = 4;
@@ -87,6 +87,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Beige;
             this.groupBox1.Controls.Add(this.botonCancelar);
             this.groupBox1.Controls.Add(this.botonGuardar);
             this.groupBox1.Controls.Add(this.cajaStock);
@@ -102,15 +103,15 @@
             this.groupBox1.Controls.Add(this.cajaDistribucion);
             this.groupBox1.Controls.Add(this.cajaTribu);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(50, 62);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(842, 279);
+            this.groupBox1.Size = new System.Drawing.Size(936, 524);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
             // botonCancelar
             // 
-            this.botonCancelar.Location = new System.Drawing.Point(638, 239);
+            this.botonCancelar.Location = new System.Drawing.Point(676, 289);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(75, 23);
             this.botonCancelar.TabIndex = 14;
@@ -120,7 +121,7 @@
             // 
             // botonGuardar
             // 
-            this.botonGuardar.Location = new System.Drawing.Point(746, 239);
+            this.botonGuardar.Location = new System.Drawing.Point(784, 289);
             this.botonGuardar.Name = "botonGuardar";
             this.botonGuardar.Size = new System.Drawing.Size(75, 23);
             this.botonGuardar.TabIndex = 13;
@@ -130,7 +131,7 @@
             // 
             // cajaStock
             // 
-            this.cajaStock.Location = new System.Drawing.Point(638, 176);
+            this.cajaStock.Location = new System.Drawing.Point(676, 226);
             this.cajaStock.Name = "cajaStock";
             this.cajaStock.Size = new System.Drawing.Size(100, 22);
             this.cajaStock.TabIndex = 12;
@@ -138,7 +139,7 @@
             // textoStock
             // 
             this.textoStock.AutoSize = true;
-            this.textoStock.Location = new System.Drawing.Point(574, 180);
+            this.textoStock.Location = new System.Drawing.Point(612, 230);
             this.textoStock.Name = "textoStock";
             this.textoStock.Size = new System.Drawing.Size(41, 16);
             this.textoStock.TabIndex = 11;
@@ -147,7 +148,7 @@
             // textoDistribucion
             // 
             this.textoDistribucion.AutoSize = true;
-            this.textoDistribucion.Location = new System.Drawing.Point(302, 180);
+            this.textoDistribucion.Location = new System.Drawing.Point(340, 230);
             this.textoDistribucion.Name = "textoDistribucion";
             this.textoDistribucion.Size = new System.Drawing.Size(77, 16);
             this.textoDistribucion.TabIndex = 10;
@@ -156,7 +157,7 @@
             // textoNombreComun
             // 
             this.textoNombreComun.AutoSize = true;
-            this.textoNombreComun.Location = new System.Drawing.Point(34, 180);
+            this.textoNombreComun.Location = new System.Drawing.Point(72, 230);
             this.textoNombreComun.Name = "textoNombreComun";
             this.textoNombreComun.Size = new System.Drawing.Size(101, 16);
             this.textoNombreComun.TabIndex = 9;
@@ -165,7 +166,7 @@
             // TextoTribu
             // 
             this.TextoTribu.AutoSize = true;
-            this.TextoTribu.Location = new System.Drawing.Point(574, 55);
+            this.TextoTribu.Location = new System.Drawing.Point(612, 105);
             this.TextoTribu.Name = "TextoTribu";
             this.TextoTribu.Size = new System.Drawing.Size(38, 16);
             this.TextoTribu.TabIndex = 8;
@@ -174,7 +175,7 @@
             // textoGenero
             // 
             this.textoGenero.AutoSize = true;
-            this.textoGenero.Location = new System.Drawing.Point(327, 55);
+            this.textoGenero.Location = new System.Drawing.Point(365, 105);
             this.textoGenero.Name = "textoGenero";
             this.textoGenero.Size = new System.Drawing.Size(52, 16);
             this.textoGenero.TabIndex = 7;
@@ -183,7 +184,7 @@
             // textoEspecie
             // 
             this.textoEspecie.AutoSize = true;
-            this.textoEspecie.Location = new System.Drawing.Point(78, 55);
+            this.textoEspecie.Location = new System.Drawing.Point(116, 105);
             this.textoEspecie.Name = "textoEspecie";
             this.textoEspecie.Size = new System.Drawing.Size(57, 16);
             this.textoEspecie.TabIndex = 6;
@@ -193,6 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::cacTU.Properties.Resources.backgroundcactus;
             this.Controls.Add(this.groupBox1);
             this.Name = "FormularioCactus";
             this.Size = new System.Drawing.Size(939, 462);

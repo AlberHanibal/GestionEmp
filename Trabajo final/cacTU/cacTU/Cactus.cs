@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cacTU
 {
-    internal class Cactus
+    public class Cactus
     {
         private int indice;
         private string especie;

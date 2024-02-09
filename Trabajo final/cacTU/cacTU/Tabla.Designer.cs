@@ -45,7 +45,6 @@
             // 
             this.tablaCactus.AllowUserToAddRows = false;
             this.tablaCactus.AllowUserToDeleteRows = false;
-            this.tablaCactus.AllowUserToOrderColumns = true;
             this.tablaCactus.BackgroundColor = System.Drawing.Color.Beige;
             this.tablaCactus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tablaCactus.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -125,6 +124,7 @@
             this.Modificar.HeaderText = "";
             this.Modificar.Name = "Modificar";
             this.Modificar.ReadOnly = true;
+            this.Modificar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Venta
             // 

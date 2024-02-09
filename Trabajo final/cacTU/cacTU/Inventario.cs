@@ -39,5 +39,20 @@ namespace cacTU
                 menu.Visible = true;
             }
         }
+
+        private void botonBuscar_Click(object sender, EventArgs e)
+        {
+            //Console.WriteLine(comboAtributo.SelectedItem.ToString());
+            // mirar que no se pueda escribir en el combobox https://stackoverflow.com/questions/85702/how-can-i-make-a-combobox-non-editable-in-net
+            if (comboAtributo.SelectedItem != null && cajaBusqueda.Text != "")
+            {
+
+                Console.WriteLine("en el if");
+            }
+                
+            
+            // hacer la busqueda, crear la lista y pasarsela a Tabla(lista)
+
+        }
     }
 }
