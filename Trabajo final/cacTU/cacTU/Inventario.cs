@@ -14,10 +14,12 @@ namespace cacTU
     public partial class Inventario : Form
     {
         private static Panel menu;
+        private BD datos;
 
         public Inventario()
         {
             InitializeComponent();
+            datos = new BD();
             contenido.Controls.Add(new Tabla());
             menu = menuTop;
             
@@ -40,19 +42,47 @@ namespace cacTU
             }
         }
 
-        private void botonBuscar_Click(object sender, EventArgs e)
+        private void busquedaCampo(object sender, EventArgs e)
         {
-            //Console.WriteLine(comboAtributo.SelectedItem.ToString());
-            // mirar que no se pueda escribir en el combobox https://stackoverflow.com/questions/85702/how-can-i-make-a-combobox-non-editable-in-net
             if (comboAtributo.SelectedItem != null && cajaBusqueda.Text != "")
             {
-
-                Console.WriteLine("en el if");
+                int campo = 0;
+                switch (comboAtributo.SelectedItem.ToString())
+                {
+                    case "Especie":
+                        campo = 1;
+                        break;
+                    case "Género":
+                        campo = 2;
+                        break;
+                    case "Tribu":
+                        campo = 3;
+                        break;
+                    case "Nombre Común":
+                        campo = 4;
+                        break;
+                    case "Distribución":
+                        campo = 5;
+                        break;
+                }
+                if (campo != 0)
+                {
+                    List<Cactus> listaCactus = datos.busquedaCelda(cajaBusqueda.Text.ToLower(), campo);
+                    contenido.Controls.Clear();
+                    contenido.Controls.Add(new Tabla(listaCactus));
+                }
+            } else if (comboAtributo.SelectedItem != null && cajaBusqueda.Text == "")
+            {
+                contenido.Controls.Clear();
+                contenido.Controls.Add(new Tabla());
             }
-                
-            
-            // hacer la busqueda, crear la lista y pasarsela a Tabla(lista)
+        }
 
+        private void reiniciarInventario_Click(object sender, EventArgs e)
+        {
+            contenido.Controls.Clear();
+            contenido.Controls.Add(new Tabla());
+            cajaBusqueda.Text = "";
         }
     }
 }

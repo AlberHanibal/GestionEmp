@@ -23,12 +23,13 @@ X botón añadir cactus
 X formato tabla con botón modificar y borrar
 X botón venta o -1 (?)
 
-búsqueda por especie, genero, tribu, distribución
+X búsqueda por especie, genero, tribu, distribución
 
 ------------------------
 
 hacer un boton custom con style 
 
-style en el formulario
+al seleccionar celda seleccionar toda la linea
+	cambiar color de texto seleccionado
 
 

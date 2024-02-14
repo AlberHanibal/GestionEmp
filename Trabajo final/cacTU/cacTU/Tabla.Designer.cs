@@ -45,6 +45,8 @@
             // 
             this.tablaCactus.AllowUserToAddRows = false;
             this.tablaCactus.AllowUserToDeleteRows = false;
+            this.tablaCactus.AllowUserToResizeColumns = false;
+            this.tablaCactus.AllowUserToResizeRows = false;
             this.tablaCactus.BackgroundColor = System.Drawing.Color.Beige;
             this.tablaCactus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tablaCactus.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -60,7 +62,9 @@
             this.Modificar,
             this.Venta});
             this.tablaCactus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablaCactus.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tablaCactus.Location = new System.Drawing.Point(0, 0);
+            this.tablaCactus.MultiSelect = false;
             this.tablaCactus.Name = "tablaCactus";
             this.tablaCactus.ReadOnly = true;
             this.tablaCactus.Size = new System.Drawing.Size(939, 462);

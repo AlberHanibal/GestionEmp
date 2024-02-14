@@ -18,10 +18,7 @@ namespace cacTU
         {
             SLDocument archivo = new SLDocument();
             rutaArchivo = AppDomain.CurrentDomain.BaseDirectory + "cactus.xlsx";
-            if (File.Exists(rutaArchivo))
-            {
-                Console.WriteLine("El archivo existe");
-            } else
+            if (!File.Exists(rutaArchivo))
             {
                 Console.WriteLine("El archivo no existe");
                 DataTable tabla = new DataTable();
@@ -90,6 +87,27 @@ namespace cacTU
                 archivo.SetCellValue(indice, 6, stock - 1);
                 archivo.SaveAs(rutaArchivo);
             }
+        }
+
+        public List<Cactus> busquedaCelda(string valor, int campo)
+        {
+            SLDocument archivo = new SLDocument(rutaArchivo);
+            int ind = 2;
+            List<Cactus> listaCactus = new List<Cactus>();
+            Cactus cactus;
+
+            while (!string.IsNullOrEmpty(archivo.GetCellValueAsString(ind, 1)))
+            {
+                if (archivo.GetCellValueAsString(ind, campo).Contains(valor)) {
+                    cactus = new Cactus(archivo.GetCellValueAsString(ind, 1), archivo.GetCellValueAsString(ind, 2),
+                    archivo.GetCellValueAsString(ind, 3), archivo.GetCellValueAsInt32(ind, 6), ind,
+                    archivo.GetCellValueAsString(ind, 4), archivo.GetCellValueAsString(ind, 5));
+                    listaCactus.Add(cactus);
+                }
+                ind++;
+            }
+
+            return listaCactus;
         }
     }
 }

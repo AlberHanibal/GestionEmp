@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.menuTop = new System.Windows.Forms.Panel();
+            this.reiniciarInventario = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cajaBusqueda = new System.Windows.Forms.TextBox();
+            this.botonBuscar = new System.Windows.Forms.Button();
+            this.comboAtributo = new System.Windows.Forms.ComboBox();
             this.AñadirCactus = new System.Windows.Forms.Button();
             this.contenido = new System.Windows.Forms.Panel();
             this.cacTU = new System.Windows.Forms.Label();
-            this.comboAtributo = new System.Windows.Forms.ComboBox();
-            this.botonBuscar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cajaBusqueda = new System.Windows.Forms.TextBox();
             this.menuTop.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuTop
             // 
+            this.menuTop.Controls.Add(this.reiniciarInventario);
             this.menuTop.Controls.Add(this.groupBox1);
             this.menuTop.Controls.Add(this.AñadirCactus);
             this.menuTop.Location = new System.Drawing.Point(13, 13);
@@ -49,9 +51,65 @@
             this.menuTop.Size = new System.Drawing.Size(727, 87);
             this.menuTop.TabIndex = 0;
             // 
+            // reiniciarInventario
+            // 
+            this.reiniciarInventario.Location = new System.Drawing.Point(164, 43);
+            this.reiniciarInventario.Name = "reiniciarInventario";
+            this.reiniciarInventario.Size = new System.Drawing.Size(108, 23);
+            this.reiniciarInventario.TabIndex = 1;
+            this.reiniciarInventario.Text = "Reiniciar Inventario";
+            this.reiniciarInventario.UseVisualStyleBackColor = true;
+            this.reiniciarInventario.Click += new System.EventHandler(this.reiniciarInventario_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cajaBusqueda);
+            this.groupBox1.Controls.Add(this.botonBuscar);
+            this.groupBox1.Controls.Add(this.comboAtributo);
+            this.groupBox1.Location = new System.Drawing.Point(290, 14);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(411, 66);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Búsqueda";
+            // 
+            // cajaBusqueda
+            // 
+            this.cajaBusqueda.Location = new System.Drawing.Point(156, 29);
+            this.cajaBusqueda.Name = "cajaBusqueda";
+            this.cajaBusqueda.Size = new System.Drawing.Size(127, 20);
+            this.cajaBusqueda.TabIndex = 2;
+            this.cajaBusqueda.TextChanged += new System.EventHandler(this.busquedaCampo);
+            // 
+            // botonBuscar
+            // 
+            this.botonBuscar.Location = new System.Drawing.Point(304, 29);
+            this.botonBuscar.Name = "botonBuscar";
+            this.botonBuscar.Size = new System.Drawing.Size(75, 23);
+            this.botonBuscar.TabIndex = 2;
+            this.botonBuscar.Text = "Buscar";
+            this.botonBuscar.UseVisualStyleBackColor = true;
+            this.botonBuscar.Click += new System.EventHandler(this.busquedaCampo);
+            // 
+            // comboAtributo
+            // 
+            this.comboAtributo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAtributo.FormattingEnabled = true;
+            this.comboAtributo.Items.AddRange(new object[] {
+            "Especie",
+            "Género",
+            "Tribu",
+            "Distribución",
+            "Nombre Común"});
+            this.comboAtributo.Location = new System.Drawing.Point(6, 29);
+            this.comboAtributo.Name = "comboAtributo";
+            this.comboAtributo.Size = new System.Drawing.Size(121, 21);
+            this.comboAtributo.TabIndex = 1;
+            this.comboAtributo.SelectedValueChanged += new System.EventHandler(this.busquedaCampo);
+            // 
             // AñadirCactus
             // 
-            this.AñadirCactus.Location = new System.Drawing.Point(67, 31);
+            this.AñadirCactus.Location = new System.Drawing.Point(30, 43);
             this.AñadirCactus.Name = "AñadirCactus";
             this.AñadirCactus.Size = new System.Drawing.Size(117, 23);
             this.AñadirCactus.TabIndex = 0;
@@ -77,49 +135,6 @@
             this.cacTU.Size = new System.Drawing.Size(188, 80);
             this.cacTU.TabIndex = 2;
             this.cacTU.Text = "cacTÚ";
-            // 
-            // comboAtributo
-            // 
-            this.comboAtributo.FormattingEnabled = true;
-            this.comboAtributo.Items.AddRange(new object[] {
-            "Especie",
-            "Género",
-            "Tribu",
-            "Distribución",
-            "Nombre Común"});
-            this.comboAtributo.Location = new System.Drawing.Point(6, 29);
-            this.comboAtributo.Name = "comboAtributo";
-            this.comboAtributo.Size = new System.Drawing.Size(121, 21);
-            this.comboAtributo.TabIndex = 1;
-            // 
-            // botonBuscar
-            // 
-            this.botonBuscar.Location = new System.Drawing.Point(307, 26);
-            this.botonBuscar.Name = "botonBuscar";
-            this.botonBuscar.Size = new System.Drawing.Size(75, 23);
-            this.botonBuscar.TabIndex = 2;
-            this.botonBuscar.Text = "Buscar";
-            this.botonBuscar.UseVisualStyleBackColor = true;
-            this.botonBuscar.Click += new System.EventHandler(this.botonBuscar_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.cajaBusqueda);
-            this.groupBox1.Controls.Add(this.botonBuscar);
-            this.groupBox1.Controls.Add(this.comboAtributo);
-            this.groupBox1.Location = new System.Drawing.Point(290, 14);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(411, 66);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Búsqueda";
-            // 
-            // cajaBusqueda
-            // 
-            this.cajaBusqueda.Location = new System.Drawing.Point(156, 29);
-            this.cajaBusqueda.Name = "cajaBusqueda";
-            this.cajaBusqueda.Size = new System.Drawing.Size(127, 20);
-            this.cajaBusqueda.TabIndex = 2;
             // 
             // Inventario
             // 
@@ -150,5 +165,6 @@
         private System.Windows.Forms.TextBox cajaBusqueda;
         private System.Windows.Forms.Button botonBuscar;
         private System.Windows.Forms.ComboBox comboAtributo;
+        private System.Windows.Forms.Button reiniciarInventario;
     }
 }

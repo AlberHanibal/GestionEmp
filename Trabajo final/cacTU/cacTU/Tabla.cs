@@ -22,6 +22,8 @@ namespace cacTU
         public Tabla()
         {
             InitializeComponent();
+            tablaCactus.ColumnHeadersDefaultCellStyle.BackColor = colorImpar;
+            tablaCactus.EnableHeadersVisualStyles = false;
             datos = new BD();
             List<Cactus> listaCactus = datos.leerExcel();
             foreach (Cactus cactus in listaCactus)
@@ -33,6 +35,8 @@ namespace cacTU
         public Tabla(List<Cactus> listaCactus)
         {
             InitializeComponent();
+            tablaCactus.ColumnHeadersDefaultCellStyle.BackColor = colorImpar;
+            tablaCactus.EnableHeadersVisualStyles = false;
             foreach (Cactus cactus in listaCactus)
             {
                 tablaCactus.Rows.Add(cactus.getIndice(), cactus.getEspecie(), cactus.getGenero(),
@@ -65,8 +69,6 @@ namespace cacTU
 
         private void tablaCactus_PostRow(object sender, DataGridViewRowPostPaintEventArgs e)
         {
-            tablaCactus.ColumnHeadersDefaultCellStyle.BackColor = colorImpar;
-            tablaCactus.EnableHeadersVisualStyles = false;
             DataGridViewRowCollection lineas = tablaCactus.Rows;
             foreach (DataGridViewRow row in lineas)
             {
@@ -74,9 +76,11 @@ namespace cacTU
                 if (row.Index % 2 == 0)
                 {
                     row.DefaultCellStyle.BackColor = colorPar;
+                    row.DefaultCellStyle.SelectionBackColor = colorParSelec;
                 } else
                 {
                     row.DefaultCellStyle.BackColor = colorImpar;
+                    row.DefaultCellStyle.SelectionBackColor = colorImparSelec;
                 }
             }
         }
@@ -105,7 +109,5 @@ namespace cacTU
                 }
             }
         }
-
-        
     }
 }
