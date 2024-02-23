@@ -43,6 +43,7 @@
             // 
             // menuTop
             // 
+            this.menuTop.BackColor = System.Drawing.Color.Beige;
             this.menuTop.Controls.Add(this.reiniciarInventario);
             this.menuTop.Controls.Add(this.groupBox1);
             this.menuTop.Controls.Add(this.AñadirCactus);
