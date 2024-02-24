@@ -32,8 +32,8 @@ namespace cacTU
                 cajaEspecie.Text = (string) linea.Cells["Especie"].Value;
                 cajaGenero.Text = (string) linea.Cells["Genero"].Value;
                 cajaTribu.Text = (string) linea.Cells["Tribu"].Value;
-                cajaDistribucion.Text = (string) linea.Cells["NombreComun"].Value;
-                cajaNombreComun.Text = (string) linea.Cells["Distribucion"].Value;
+                cajaDistribucion.Text = (string) linea.Cells["Distribucion"].Value;
+                cajaNombreComun.Text = (string) linea.Cells["NombreComun"].Value;
                 cajaStock.Value = (int) linea.Cells["Stock"].Value;
             }
         }
@@ -45,14 +45,14 @@ namespace cacTU
                 if (linea == null)
                 {
                     Cactus cactus = new Cactus(cajaEspecie.Text, cajaGenero.Text, cajaTribu.Text, 
-                        (int)cajaStock.Value, 0, cajaDistribucion.Text, cajaNombreComun.Text);
+                        (int)cajaStock.Value, 0, cajaNombreComun.Text, cajaDistribucion.Text);
                     datos.añadirCactus(cactus);
                 }
                 else
                 {
                     // modificar cactus, coger el indice
                     Cactus cactus = new Cactus(cajaEspecie.Text, cajaGenero.Text, cajaTribu.Text,
-                        (int)cajaStock.Value, (int) linea.Cells["Indice"].Value, cajaDistribucion.Text, cajaNombreComun.Text);
+                        (int)cajaStock.Value, (int) linea.Cells["Indice"].Value, cajaNombreComun.Text, cajaDistribucion.Text);
                     datos.modificarCactus(cactus);
                 }
 
@@ -98,14 +98,6 @@ namespace cacTU
                 accl.AddRange(listaParaAutoCompletar.ToArray());
                 campo.AutoCompleteCustomSource = accl;
                 campo.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                /*
-                campo.AutoCompleteMode = AutoCompleteMode.Suggest;
-                AutoCompleteStringCollection accl = new AutoCompleteStringCollection();
-                String[] cosas = { "hola", "qwe", "kjolsadkasd" };
-                accl.AddRange(cosas);
-                campo.AutoCompleteCustomSource = accl;
-                campo.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                */
             }
 
         }

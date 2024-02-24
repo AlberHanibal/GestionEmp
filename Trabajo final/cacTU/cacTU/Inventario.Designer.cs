@@ -84,6 +84,7 @@
             // 
             // botonBuscar
             // 
+            this.botonBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonBuscar.Location = new System.Drawing.Point(304, 29);
             this.botonBuscar.Name = "botonBuscar";
             this.botonBuscar.Size = new System.Drawing.Size(75, 23);
@@ -141,6 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::cacTU.Properties.Resources.backgroundcactus;
             this.ClientSize = new System.Drawing.Size(964, 581);
             this.Controls.Add(this.cacTU);
